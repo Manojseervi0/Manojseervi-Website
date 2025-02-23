@@ -1,58 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manoj Seervi - Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
-    <script defer src="./scipt.js"></script>
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+    
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <div class="logo">
+        <img src="./M (1).png" alt="MS Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+          <li><a href="games.html" class="games-button">Games</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    
     <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! My name is Manoj Seervi. I am passionate about AI, Machine Learning, and Web Development. I love learning new technologies and building innovative projects.</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>AI-Powered Virtual Interior Designer</h3>
-            <p>A project using AI to help design interiors virtually.</p>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="./manoj.jpg" alt="Your Photo">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm Manoj Seervi, a passionate AI and Web Developer currently working on 
+                    AI-Powered Virtual Interior Designer and Image Caption Generator projects.
+                </p>
+            </div>
         </div>
     </section>
     
-    <section id="contact">
-        <h2>Contact</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
-        <p>Email: manoj.seervi@example.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/manoj-seervi-4890a2282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn Profile</a></p>
-        <p>GitHub: <a href="https://github.com/manojseervi0">GitHub Profile</a></p>
-    </section>
     
+    <section id="blogs">
+      <h2 class="section-title">Blogs</h2>
+      <div class="blog-container">
+        <div class="blog-card">
+          <img src="./python.webp" alt="Python Blog" />
+          <h3>The Power of Python: A Beginner's Guide</h3>
+          <p>Explore how Python empowers developers and simplifies coding.</p>
+          <a href="#" class="read-more">Read More →</a>
+        </div>
+        <div class="blog-card">
+          <img src="./ai.webp" alt="AI Blog" />
+          <h3>The Impact of Artificial Intelligence on Everyday Life</h3>
+          <p>Discover how AI is shaping the world around us.</p>
+          <a href="#" class="read-more">Read More →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <!-- AI Interior Designer Project -->
+        <div class="project-card">
+          <img src="./interior.webp" alt="AI Interior Designer" />
+          <div class="overlay">
+            <h3>AI-Powered Virtual Interior Designer</h3>
+            <p>A project using AI to help design interiors virtually.</p>
+            <a href="#" class="view-more">View More</a>
+          </div>
+        </div>
+
+        <!-- Image Caption Generator Project -->
+        <div class="project-card">
+          <img src="./caption.webp" alt="Image Caption Generator" />
+          <div class="overlay">
+            <h3>Image Caption Generator using AI</h3>
+            <p>
+              A deep learning-based system that generates accurate image
+              captions.
+            </p>
+            <a href="#" class="view-more">View More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="social-icons">
+      <a
+        href="https://www.linkedin.com/in/manoj-seervi-4890a2282"
+        target="_blank"
+      >
+        <img src="./linkedin.png" alt="LinkedIn" />
+      </a>
+      <a
+        href="https://www.instagram.com/_ma9j_08?igsh=Z2JsZzdlYjhzeXp1"
+        target="_blank"
+      >
+        <img src="./instagram.png" alt="Instagram" />
+      </a>
+      <a href="https://github.com/manojseervi0" target="_blank">
+        <img src="./github.png" alt="GitHub" />
+      </a>
+    </div>
+    <section id="contact">
+      <h2 class="contact-title">Contact Me</h2>
+      <!-- Outside the main box -->
+      <div class="contact-container">
+        <!-- Left Side: Heading and Description -->
+        <div class="contact-left">
+          <h2>LET'S TALK ABOUT EVERYTHING!</h2>
+          <p>
+            Feel free to reach out for any queries, collaborations, or just to
+            say hi!
+          </p>
+        </div>
+
+        <!-- Right Side: Contact Form -->
+        <div class="contact-right">
+          <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" />
+            <input type="email" id="email" placeholder="Your Email" />
+            <textarea id="message" placeholder="Write your message"></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <footer>
-        <p>&copy; 2025 Manoj Seervi</p>
+      <p>&copy; 2025 Manoj Seervi</p>
     </footer>
-</body>
+  </body>
 </html>

@@ -1,0 +1,114 @@
+/* General Styling for Dark Neon Theme */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0d0d;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #111;
+    padding: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff007f;
+    text-shadow: 0 0 10px #ff007f;
+}
+
+/* Game Section */
+#games {
+    padding: 50px 20px;
+}
+
+/* Neon Heading */
+.neon-text {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #ff007f;
+    text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 30px #ff007f;
+    margin-bottom: 30px;
+}
+
+/* Game Cards */
+.game {
+    display: inline-block;
+    width: 300px;
+    background: rgba(30, 30, 30, 0.9);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    border: 2px solid #ff007f;
+    color: white;
+    box-shadow: 0px 0px 15px rgba(255, 0, 127, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.game:hover {
+    transform: scale(1.05);
+}
+
+/* Game Buttons */
+.neon-button {
+    display: inline-block;
+    padding: 12px 18px;
+    margin-top: 15px;
+    background: #ff007f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px #ff007f;
+    transition: 0.3s ease-in-out;
+}
+
+.neon-button:hover {
+    background: #ff1493;
+    box-shadow: 0 0 15px #ff1493;
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 768px) {
+    #games {
+        padding: 30px 10px;
+    }
+
+    .neon-text {
+        font-size: 24px; /* Reduce heading size */
+    }
+
+    .game {
+        width: 90%; /* Full width on small screens */
+        margin: 15px auto; /* Center align */
+        padding: 15px;
+    }
+
+    .neon-button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+.coming-soon {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff4500;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: #e63900;
+}
