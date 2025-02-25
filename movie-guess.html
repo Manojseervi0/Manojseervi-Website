@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Guess Game</title>
+    <link rel="stylesheet" href="./gamestyle.css"> <!-- Link to CSS -->
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>🎬 Movie Guess Game 🎥</h1>
+        <p>Guess the movie name by selecting letters! You have 5 attempts.</p>
+        
+        <div id="movie-display" class="movie-name">_ _ _ _ _ _ _</div>
+        <p id="attempts">Attempts Left: 5</p>
+        <p id="wrong-letters">Wrong Letters: None</p>
+
+        <input type="text" id="guess-input" maxlength="1" placeholder="Enter a letter">
+        <button id="guess-btn">Guess</button>
+
+        <p id="message"></p>
+        <button id="restart-btn">Restart Game</button>
+    </div>
+
+    <script src="game.js"></script> <!-- Link to JavaScript -->
+</body>
+</html>

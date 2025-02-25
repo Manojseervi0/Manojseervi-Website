@@ -39,20 +39,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Handle "Read More" in Blogs
-  document.querySelectorAll(".blog .read-more").forEach((link) => {
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-
-      // Check if "data-url" attribute exists
-      const blogUrl = this.getAttribute("data-url");
-      if (blogUrl) {
-        window.location.href = blogUrl; // Redirect to the full blog page
-      } else {
-        alert("Blog post is coming soon!");
-      }
-    });
+  /// Handle "Read More" in Blogs
+// Handle "Read More" in Blogs
+document.querySelectorAll(".read-more").forEach((link) => {
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
+    alert("Coming Soon! Stay tuned for more details.");
   });
+});
+
+// Hide loader after page loads
+window.addEventListener("load", function () {
+  document.getElementById("loader").style.display = "none";
+});
+
 
   // Handle "Play Now" in Games (Optional)
   document.querySelectorAll(".game .neon-button").forEach((button) => {
