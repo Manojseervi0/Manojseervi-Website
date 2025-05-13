@@ -107,7 +107,7 @@ let wrongAttempts = 0;
 function generateHint(movie) {
     let hintLetters = new Set();
     let letters = movie.replace(/ /g, "").split(""); // Remove spaces and split letters
-    let hintCount = Math.ceil(letters.length * 0.3); // Reveal 30% of the letters
+    let hintCount = Math.ceil(letters.length * 0.05); // Reveal 30% of the letters
 
     while (hintLetters.size < hintCount) {
         let randomIndex = Math.floor(Math.random() * letters.length);
