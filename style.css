@@ -49,6 +49,7 @@ body {
     line-height: 1.6;
     color: #e6edf3;
 }
+
 @media screen and (max-width: 768px) {
     .about-container {
         flex-direction: column; /* Stack image and text vertically */
@@ -96,7 +97,10 @@ header {
 #projects {
     text-align: center;
     padding: 50px 20px;
+}
 
+#projects h2 {
+    margin-bottom: 20px;
 }
 
 /* ==== PROJECTS CONTAINER ==== */
@@ -424,6 +428,7 @@ section {
     /* Dark background with transparency */
     padding: 30px;
     border-radius: 10px;
+    /* Cyan Glow */
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
     /* Cyan Glow */
 }
@@ -544,6 +549,7 @@ footer {
         gap: 15px;
     }
 }
+
 /* Loader Background */
 #loader {
     position: fixed;
@@ -570,6 +576,7 @@ footer {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
 @media screen and (max-width: 768px) {
   .social-icons {
     position: static;
@@ -577,3 +584,4 @@ footer {
     justify-content: center;
   }
 }
+
